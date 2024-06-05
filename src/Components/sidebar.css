@@ -1,0 +1,49 @@
+.extranav {
+    height: calc(100% - 60px); /* Adjust the height to account for the header height */
+    width: 7%;
+    padding:10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 60px; /* Adjust to match the height of the header */
+    overflow-y: auto; /* Enable scrolling */
+    z-index: 1000; /* Ensure it sits above other elements */
+  }
+
+  .extranav::-webkit-scrollbar {
+    width: 0;  /* Chrome, Safari, Opera */
+    height: 0;
+}
+
+/* For IE, Edge */
+.extranav {
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+  
+  .nav-item {
+    position: relative; /* Ensure relative positioning for proper absolute positioning of text */
+    display: block; /* Make sure items stack vertically */
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .icon-container {
+    position: relative; /* Ensure relative positioning for proper absolute positioning of text */
+  }
+  
+  .text {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and other styles as needed */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none; /* Hide text by default */
+  }
+  
+  .nav-item:hover .text {
+    display: block; /* Show text on hover */
+  }
