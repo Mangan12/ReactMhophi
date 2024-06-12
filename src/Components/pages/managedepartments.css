@@ -1,0 +1,14 @@
+.card-custom {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card-custom:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .card-custom.active {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+  
